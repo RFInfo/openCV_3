@@ -153,7 +153,8 @@ public class MorphologyTest {
     //! [update]
 
     //! [main]
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UnsupportedLookAndFeelException, ClassNotFoundException, InstantiationException, IllegalAccessException {
+        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         // Load the native OpenCV library
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 
